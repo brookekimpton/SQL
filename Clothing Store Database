@@ -1,0 +1,23 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, name TEXT, section TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO clothing_store VALUES (1, "shirts", "unisex", 20, 35);
+INSERT INTO clothing_store VALUES (2, "pants", "unisex", 60, 55);
+INSERT INTO clothing_store VALUES (3, "shoes", "unisex", 10, 40);
+INSERT INTO clothing_store VALUES (4, "dresses", "women", 15, 30);
+INSERT INTO clothing_store VALUES (5, "makeup", "women", 10, 15);
+INSERT INTO clothing_store VALUES (6, "socks", "unisex", 50, 6);
+INSERT INTO clothing_store VALUES (7, "boxers", "men", 55, 12);
+INSERT INTO clothing_store VALUES (8, "blouses", "women", 40, 25);
+INSERT INTO clothing_store VALUES (9, "tanktops", "unisex", 52, 14);
+INSERT INTO clothing_store VALUES (10, "sandals", "women", 30, 24);
+INSERT INTO clothing_store VALUES (11, "scrunchies", "women", 52, 6);
+INSERT INTO clothing_store VALUES (12, "earrings", "women", 45, 10);
+INSERT INTO clothing_store VALUES (13, "sweaters", "unisex", 45, 62);
+INSERT INTO clothing_store VALUES (14, "beanies", "men", 15, 16);
+INSERT INTO clothing_store VALUES (15, "backpacks", "unisex", 20, 48);
+
+--display the data order by price.
+SELECT * FROM clothing_store ORDER BY price;
+SELECT * FROM clothing_store WHERE quantity <=60 ORDER BY price;
+
+SELECT MAX(quantity) FROM clothing_store;
